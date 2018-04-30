@@ -55,33 +55,8 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#buy">Beli Voucher</button>
-					<div id="buy" class="modal fade" role="dialog">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times</button>
-									<h4 class="modal-title">Beli Voucher Disini</h4>
-								</div>
-								<div class="modal-body">
-						        <form>
-						          <div class="form-group">
-						            <label for="recipient-name" class="col-form-label">Recipient:</label>
-						            <input type="text" class="form-control" id="recipient-name">
-						          </div>
-						          <div class="form-group">
-						            <label for="message-text" class="col-form-label">Message:</label>
-						            <textarea class="form-control" id="message-text"></textarea>
-						          </div>
-						        </form>
-						      </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						        <button type="button" class="btn btn-primary">Send message</button>
-						      </div>
-							</div>
-						</div>
-					</div>
+					<button type="button" class="banner_btn btn-white btn-lg" data-toggle="modal" data-target="#buy">Beli Voucher</button>
+					<button type="button" class="banner_btn btn-transparent btn-lg" data-toggle="modal" data-target="#sell">Jual Voucher</button>
 				</div>
 			</div>	
 			<div class="social">
@@ -93,6 +68,90 @@
 			</div>	
 		</div>
 	</section>
+
+	<!-- MODAL PEMBELIAN VOUCHER -->
+	<div id="buy" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Beli Voucher Disini</h4>
+				</div>
+				<div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="recipient-name" class="col-form-label">Masukan Nama Lengkap Anda</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="nama sesuai akun indodax">
+		            <label for="recipient-name" class="col-form-label">Masukan Email Anda</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="voucher@email.com">
+		            <label for="recipient-name" class="col-form-label">Masukan Nomer HP Anda</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="nomer hp aktif">
+		            <label for="recipient-name" class="col-form-label">Masukan Nominal Pembelian Voucher</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="Minimal Rp. 50.000">
+		          </div>
+		          <div class="form-group">
+		          	<p>Catatan*<br>
+		          		<ol>
+		          			<li>Jika nama tidak sesuai dengan nama akun dan nama bank, maka transaksi tidak akan diproses</li>
+		          			<li>Pembelian voucher dibawah Rp. 50.000 tidak akan diproses</li>
+		          		</ol>
+		          	</p>
+
+		          </div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+		        <button type="button" class="btn btn-success">Beli Voucher</button>
+		      </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL PEMBELIAN VOUCHER -->
+
+	<!-- MODAL PENJUALAN VOUCHER -->
+	<div id="sell" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Jual Voucher Disini</h4>
+				</div>
+				<div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="recipient-name" class="col-form-label">Masukan Nama Lengkap Anda</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="nama sesuai akun indodax">
+		            <label for="recipient-name" class="col-form-label">Masukan Email Anda</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="voucher@email.com">
+		            <label for="recipient-name" class="col-form-label">Masukan Nomer HP Anda</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="nomer hp aktif">
+		            <label for="recipient-name" class="col-form-label">Masukan Nominal Voucher</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="Maksimal Rp. 10.000.000">
+		            <label for="recipient-name" class="col-form-label">Masukan Voucher Anda</label>
+		            <input type="text" class="form-control" id="recipient-name" placeholder="BTC-IDR-XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX">
+		          </div>
+		          <div class="form-group">
+		          	<p>Catatan*<br>
+		          		<ol>
+		          			<li>Jika nama tidak sesuai dengan nama akun dan nama bank, maka transaksi tidak akan diproses</li>
+		          			<li>Penjualan voucher minimal Rp. 50.000, Maksimal Rp. 10.000.000</li>
+		          			<li>Penjualan dibatalkan jika tidak memenuhi syarat diatas dan kode voucher salah atau tidak sesuai</li>
+		          		</ol>
+		          	</p>
+
+		          </div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+		        <button type="button" class="btn btn-success">Beli Voucher</button>
+		      </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL PENJUALAN VOUCHER -->
+
 
 	<section id="about" class="section-padding about-section">
 		<div class="container">	

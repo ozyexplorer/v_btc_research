@@ -54,14 +54,13 @@
 	border: 2px solid transparent;
 	transition: all 0.5s linear;
 	font-weight: bold;
-	text-transform: uppercase;
 	margin-right: 10px;
 	color: white;
 }
 
 .banner_btn:hover {
 	text-decoration: none;
-	font-size: 20px;
+	padding: 16px 31px;
 	color: white;
 }
 
@@ -163,4 +162,8 @@ h3 {
 
 .thumbnail {
 	
+}
+
+.modal-title{
+	text-align: center;
 }
