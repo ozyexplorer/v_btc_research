@@ -2,8 +2,9 @@
 	background: -webkit-linear-gradient(235deg, white 0%,#1e88e5 50%);
 	position: relative;
 	padding-top: 150px;
+	margin-bottom: 50px;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background-size: cover;
 	overflow: hidden;
 	z-index: 1;
@@ -74,6 +75,7 @@
 
 .social {
 	margin-top: 100px;
+	margin-bottom: 50px;
 	color: white;
 }
 
@@ -166,4 +168,35 @@ h3 {
 
 .modal-title{
 	text-align: center;
+}
+
+@media (max-width:640px){
+    .img-header-lg{
+        display:none;
+    }
+
+    .img-header-sm{
+        display:none;
+    }
+
+    .judul_text{
+    	text-align: center;
+    	margin-top: -30px;
+    }
+
+    .judul_text h1{
+    	font-size: 50px;
+    }
+
+    .jual_beli {
+    	align-items: center;
+    	text-align: center;
+    }
+
+    .social {
+    	margin-top: 50px;
+    	margin-bottom: 50px;
+    }
+
+
 }
