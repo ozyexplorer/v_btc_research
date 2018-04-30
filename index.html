@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/plugin/bootstrap4/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
@@ -56,8 +55,33 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="" class="banner_btn btn-white">Beli Voucher</a>
-					<a href="" class="banner_btn btn-transparent">Jual Voucher</a>
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#buy">Beli Voucher</button>
+					<div id="buy" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times</button>
+									<h4 class="modal-title">Beli Voucher Disini</h4>
+								</div>
+								<div class="modal-body">
+						        <form>
+						          <div class="form-group">
+						            <label for="recipient-name" class="col-form-label">Recipient:</label>
+						            <input type="text" class="form-control" id="recipient-name">
+						          </div>
+						          <div class="form-group">
+						            <label for="message-text" class="col-form-label">Message:</label>
+						            <textarea class="form-control" id="message-text"></textarea>
+						          </div>
+						        </form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-primary">Send message</button>
+						      </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>	
 			<div class="social">
@@ -120,7 +144,7 @@
 			<div class="row align-items-center">
 				<div class="col-sm-6">
 					<div class="section_title text-center">
-						<h2>TENTANG<strong>KAMI</strong></h2>
+						<h2>TENTANG<strong> KAMI</strong></h2>
 					</div>
 					<p class="about_team">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -185,7 +209,6 @@
 			</div>
 		</div>
 	</section>
-
 
 
 
