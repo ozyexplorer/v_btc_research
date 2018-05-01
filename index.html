@@ -12,7 +12,7 @@
 	<!-- START BAGIAN NAVBAR -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
 	  <a class="navbar-brand" href="#">V BTC</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	  <button class="navbar-toggler right-padding" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarText">
@@ -30,16 +30,8 @@
 	        <a class="nav-link" href="#">Kontak Kami</a>
 	      </li>
 	    </ul>
-	    <span class="">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="masuk" id="auth" href="#">MASUK <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="daftar" id="auth" href="#">DAFTAR</a>
-		      </li>
-		    </ul>
-	    </span>
+	    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#masuk">MASUK</button>
+	    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#buy">DAFTAR</button>
 	  </div>
 	</nav>
 	<!-- END BAGIAN NAVBAR -->
@@ -156,6 +148,35 @@
 
 	<!-- MODAL PENJUALAN VOUCHER -->
 
+	<!-- MODAL LOGIN -->
+	<div id="masuk" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">LOGIN</h4>
+				</div>
+				<div class="modal-body">
+		        <form>
+				  <div class="input-group">
+				    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+				  </div><br>
+				  <div class="input-group">
+				    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+				  </div>
+				</form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+		        <button type="button" class="btn btn-success">Masuk</button>
+		      </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL LOGIN -->
+
 
 	<section id="about" class="section-padding about-section">
 		<div class="container">	
@@ -218,6 +239,7 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="skill">
+						<h2 style="text-align: center;">SKILL KAMI</h2>
 						<span>FrontEnd Developer</span>
 						<div class="progress">
 		  					<div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
