@@ -114,6 +114,27 @@
 	padding: 50px;
 }
 
+#pembayaran {
+  background: #eeeeee;
+  padding-top : 50px;
+  padding-bottom: 30px;
+}
+
+#footer {
+  background: #9e9e9e;
+  padding-top : 50px;
+  padding-bottom: 20px;
+}
+
+.biru {
+  color: #1565c0;
+  font-weight: bold;
+}
+
+.hitam {
+  color: #212121;
+}
+
 h3 {
 	text-align: center;
 }
@@ -160,11 +181,21 @@ h3 {
 
 
 #our_team {
-	background: #90caf9;
-	padding: 50px;
+	background: #ffffff;
+  padding-bottom : 60px;
 }
 
+#team{
+  padding-top: 50px;
+  padding-bottom: 30px; 
+  background: #ffffff;
+}
 
+.tim {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
 
 .modal-title{
 	text-align: center;
